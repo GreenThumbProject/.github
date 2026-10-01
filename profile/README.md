@@ -1,39 +1,25 @@
-# 🌱 GreenThumb Project
+# GreenThumb
 
-**An AI-powered automated greenhouse ecosystem for optimal plant growth.**
+**A low-cost automated hydroponic grow system.**
 
 ## About
 
-GreenThumb is developing an automated greenhouse platform that uses IoT sensors, computer vision, and machine learning to create optimal growing environments for any plant species.
+GreenThumb is an automated hydroponic grow system. A Raspberry Pi 5 at each grow unit reads the sensors, runs the pumps and other actuators, and keeps working without an internet connection. Its data syncs to a cloud service when a connection is available.
+
+GreenThumb is in its research phase: we are building a low-cost prototype for growing cherry tomatoes.
 
 ## Repositories
 
-| Repository | Description | Visibility |
-|------------|-------------|------------|
-| [rasp5](https://github.com/GreenThumbProject/rasp5) | Raspberry Pi 5 deployment | Private |
-| [greenthumb-core](https://github.com/GreenThumbProject/greenthumb-core) | Shared Python library | Private |
-| [database](https://github.com/GreenThumbProject/database) | Database schemas & migrations | Private |
-| [cron](https://github.com/GreenThumbProject/cron) | Scheduled tasks & jobs | Private |
-| [docs](https://github.com/GreenThumbProject/docs) | Project documentation | Public |
-| [research](https://github.com/GreenThumbProject/research) | Research papers & academic work | Private |
+- [docs](https://github.com/GreenThumbProject/docs): project documentation ([read it online](https://docs.greenthumbsystems.com))
 
-## Documentation
+The rest of the code is private: the edge software for the Raspberry Pi, the cloud services, the database schema and our research material.
 
-📚 [Full Documentation](https://greenthumbproject.github.io/docs)
+## Technology
 
-## Current Status
-
-🔬 **Research Phase**: Developing low-cost hydroponic platform for cherry tomatoes
-
-### Technology Stack
-
-- **Controller**: Raspberry Pi 5
-- **Language**: Python 3.11+
-- **Database**: PostgreSQL
-- **Containers**: Docker Compose
-- **CI/CD**: GitHub Actions → Docker Hub
+- **Edge:** Raspberry Pi 5, Python 3.11, PostgreSQL 17, Docker Compose
+- **Cloud:** Python (FastAPI), Java (Spring Boot), React, PostgreSQL 17 with TimescaleDB
+- **CI/CD:** GitHub Actions builds the Docker images
 
 ## Contact
 
-- **Developer**: Henrique Bucci R. Netto
-- **GitHub**: [@henriquebrnetto](https://github.com/henriquebrnetto)
+- Henrique Bucci R. Netto ([@henriquebrnetto](https://github.com/henriquebrnetto))
